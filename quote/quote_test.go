@@ -1,4 +1,4 @@
-package alphavantage
+package quote
 
 import "testing"
 
@@ -27,7 +27,7 @@ func TestParseQuote(t *testing.T) {
 
 	for name, test := range testCases {
 		t.Run(name, func(t *testing.T) {
-			output, err := parseQuote(test.input)
+			output, err := ParseQuote(test.input)
 			if err != nil && !test.expected_err {
 				t.Errorf("Did not expect error but recieved: %s", err)
 			} else if !test.expected_err && output.Price != test.expected {

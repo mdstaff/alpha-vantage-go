@@ -1,4 +1,4 @@
-package alphavantage
+package quote
 
 import (
 	"encoding/json"
@@ -22,7 +22,7 @@ type Quote struct {
 	ChangePercent    string `json:"10. change percent"`
 }
 
-func parseQuote(resp []byte) (*Quote, error) {
+func ParseQuote(resp []byte) (*Quote, error) {
 	var quote AVQuote
 
 	err := json.Unmarshal(resp, &quote)

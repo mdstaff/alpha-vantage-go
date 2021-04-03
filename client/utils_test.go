@@ -1,4 +1,4 @@
-package alphavantage
+package client
 
 import "testing"
 

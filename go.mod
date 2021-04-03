@@ -1,3 +1,3 @@
-module github.com/bradleyjones/alpha-vantage-go
+module github.com/mdstaff/alpha-vantage-go
 
-go 1.13
+go 1.16
